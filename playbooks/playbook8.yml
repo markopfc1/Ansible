@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  vars:
+    package_name: httpd
+  tasks:
+    - name: Delete httpd package
+      yum:
+        name: "{{ package_name }}"
+        state: absent

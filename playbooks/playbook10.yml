@@ -1,0 +1,7 @@
+- hosts: localhost
+  vars:
+    my_name: Student
+  tasks:
+    - name: Print name using var option
+      debug:
+        var: "{{ my_name }}"
