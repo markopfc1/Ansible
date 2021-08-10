@@ -1,0 +1,16 @@
+---
+- name: Play 1
+  hosts: localhost
+  tasks:
+    - name: Create /tmp/testfile.txt
+      file:
+        path: /tmp/testfile.txt
+        state: touch
+
+- name: Play 2
+  hosts: localhost
+  tasks:
+    - name: Create /tmp/testfile.txt
+      file:
+        path: /tmp/testfile.txt
+        state: touch
